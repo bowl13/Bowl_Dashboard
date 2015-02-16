@@ -49,9 +49,28 @@ include 'inc/cabecera.php';?>
 							</div>
 							-->
 							<p>Contraseña</p>
-							<input type="text" placeholder="Contraseña">
+							<input type="password" placeholder="Contraseña">
 							<p>Repetir</p>
-							<input type="text" placeholder="Repetir">
+							<input type="password" placeholder="Repetir">
+
+							<p>Tipo de usuario</p>
+							<div class="el-select">
+								<select name="usuario">
+									<option value="seleccionar">Seleccione</option>
+									<option value="pedro">Pedro</option>
+									<option value="javier">Javier</option>
+									<option value="felipe">Felipe</option>
+									<option value="macarena">Macarena</option>
+								</select>
+							</div>
+
+							<p>Multiple</p>
+							<select id="mul" multiple="multiple">
+								<option value="1">uno</option>
+								<option value="2">dos</option>
+								<option value="3">tres</option>
+							</select>
+
 						</div><!-- /der - - - - - - - - - - -->
 
 						<div class="clearfix"></div>

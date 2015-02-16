@@ -15,7 +15,7 @@ include 'inc/cabecera.php';?>
 								<div class="fb-foto"></div>
 							</div>
 						</td>
-						<td><p>Pedrito Contreras</p></td>
+						<td><p>Marcela Contreras</p></td>
 						<td><p>Admin</p></td>
 						<td><p>pedroto@gmail.com</p></td>
 						<td><p>Bowl</p></td>

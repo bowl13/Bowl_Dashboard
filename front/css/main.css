@@ -608,6 +608,18 @@ input[type="text"]{
 input:focus[type="text"]{
 	border: 1px solid #3397DA;
 }
+input[type="password"]{
+	width:100%;
+	height:40px;
+	float: left;
+	font-size: 18px;
+	margin:0 0 20px 0;
+	border: 1px solid #ccc;
+	text-indent: 15px;
+}
+input:focus[type="password"]{
+	border: 1px solid #3397DA;
+}
 input[type="submit"] {
 	width: 70px;
 	height: 30px;
@@ -638,29 +650,34 @@ textarea{
 textarea:focus[type="text"]{
 	border: 1px solid #3397DA;
 }
+.el-select {
+	width: 280px;
+	height: 40px;
+	float: left;
+	overflow: hidden;
+	border: 1px solid #CCC;
+	margin: 0px 0px 20px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	color: rgb(204, 204, 204);
+}
 .el-select select {
-	width: 268px;
+	width: 300px;
 	height: 42px;
-	background: transparent;
+	background: none repeat scroll 0% 0% transparent;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1;
-	border: none;
-	border-radius: 0;
-	-webkit-appearance: none;
-	color:#fff;
-	text-indent: 5px;
+	border: medium none;
+	border-radius: 0px;
+	color: #999;
+	text-indent: 3px;
 	cursor: pointer;
 }
-.el-select {
-	width: 240px;
-	height: 40px;
-	float:left;
-	overflow: hidden;
-	background: url(new_arrow.png) no-repeat right #3397da;
-	border: 1px solid #ccc;
-	margin:0 0 20px 0;
+.el-select select option {
+	background: #fff;
+	color:#222;
 }
+
 .izq{
 	width:48%;
 	height:auto;
@@ -702,11 +719,11 @@ textarea:focus[type="text"]{
 	background: #fff;
 }
 .soltar .modulo {
-	width:40%;
+	width:48%;
 	height:auto;
 	float: left;
 	border:1px solid #ccc;
-	margin:3px 0;
+	margin:3px 5px 3px 0;
 	padding: 3px;
 	cursor: move;
 	overflow: hidden;

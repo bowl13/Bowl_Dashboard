@@ -12,11 +12,25 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/multiple-select.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/jquery.multiple.select.js"></script>
+
+
+
+	<script>
+		$(document).ready(function(){
+	        $("#mul").multipleSelect({
+	            placeholder: "Seleccione",
+	            selectAll: false
+	        });
+	    });
+    </script>
+
 	</head>
 	<body>
 

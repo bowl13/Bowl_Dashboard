@@ -13,10 +13,10 @@
 				<div class="cont-perf">
 					<div class="menu">
 						<ul>
-							<li><a class="men-ha usu" href="/usuarios.php">Usuarios</a></li>
-							<li><a class="men-ha cli" href="/clientes.php">Clientes</a></li>
-							<li><a class="men-ha cam" href="/campanas.php">Campañas</a></li>
-							<li><a class="men-ha cre" href="/crear.php">Crear campañas</a></li>
+							<li><a class="men-ha usu" href="usuarios.php">Usuarios</a></li>
+							<li><a class="men-ha cli" href="clientes.php">Clientes</a></li>
+							<li><a class="men-ha cam" href="campanas.php">Campañas</a></li>
+							<!-- <li><a class="men-ha cre" href="crear.php">Crear campañas</a></li> -->
 						</ul>
 					</div>
 				</div><!-- cont-perf -->
