@@ -14,7 +14,7 @@ include 'inc/cabecera.php';?>
 								<div class="foto-perfil">
 									<img class="" src="" alt="">
 								</div>
-								<input type="button" value="Subir">
+								<span class="btn-file">Subir<input type="file" value="Subir"></span>
 								<input type="button" value="Borrar">
 							</div>
 
@@ -26,31 +26,14 @@ include 'inc/cabecera.php';?>
 						</div><!-- /izq - - - - - - - - - -->
 						<div class="der">
 							<p>Asociar usuario</p>
-							<div class="el-select">
-								<select name="usuario">
-									<option value="seleccionar">Seleccionar</option>
-									<option value="pedro">Pedro</option>
-									<option value="javier">Javier</option>
-									<option value="felipe">Felipe</option>
-									<option value="macarena">Macarena</option>
-								</select>
-							</div>
-
-							<p>Asociar campaña</p>
-							<div class="el-select">
-								<select name="campana">
-									<option value="5">Seleccionar</option>
-									<option value="1">Mailing</option>
-									<option value="2">Mochila</option>
-									<option value="3">Tour</option>
-									<option value="4">Macarena</option>
-								</select>
-							</div>
-
-							<p>Teléfono</p>
-							<input type="text" placeholder="Teléfono">
+							<select id="mul" multiple="multiple">
+								<option value="1">uno</option>
+								<option value="2">dos</option>
+								<option value="3">tres</option>
+							</select>
+							
 						</div><!-- /der - - - - - - - - - - -->
-
+						<div class="clearfix"></div>
 						<input class="borrar" type="button" value="Cancelar">
 						<input type="submit" value="Guardar">
 					</form>

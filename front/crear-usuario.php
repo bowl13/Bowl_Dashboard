@@ -23,6 +23,11 @@ include 'inc/cabecera.php';?>
 							<input type="text" placeholder="Apellido">
 							<p>Mail</p>
 							<input type="text" placeholder="Mail">
+
+							<p>Estado</p>
+							<div class="check">
+								<input type="checkbox" name="recordar" value="recordar"> <p class="activo">Activo</p>
+							</div>
 						</div><!-- /izq - - - - - - - - - -->
 						<div class="der">
 							<!-- e

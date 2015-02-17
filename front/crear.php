@@ -14,7 +14,7 @@ include 'inc/cabecera.php';?>
 								<div class="foto-perfil">
 									<img class="" src="" alt="">
 								</div>
-								<input type="button" value="Subir">
+								<span class="btn-file">Subir<input type="file" value="Subir"></span>
 								<input type="button" value="Borrar">
 							</div>
 
@@ -57,8 +57,6 @@ include 'inc/cabecera.php';?>
 									<option value="macarena">Macarena</option>
 								</select>
 							</div>
-							<p>Teléfono</p>
-							<input type="text" placeholder="Teléfono">
 						</div><!-- /der - - - - - - - - - - -->
 						<div class="clearfix"></div>
 						<!-- <input class="borrar" type="button" value="Cancelar">

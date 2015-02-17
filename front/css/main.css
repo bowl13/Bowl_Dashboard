@@ -148,8 +148,6 @@ footer{
 	height:50px;
 	background: #20262c;
 	float: left;
-    position: fixed;
-    bottom: 0px;
 }
 #contenedor{
 	width:100%;
@@ -307,12 +305,14 @@ a.u-elim{
 
 
 .usuarios{
+	height: 100px;
 	border-bottom:1px solid #999;
 	display: block;
 	text-decoration: none;
 	color:#393939;
 }
 .usuarios:hover{
+	background: url('../img/bg-edit.png') no-repeat 90% center;
 	color:#e74c3c;
 }
 .usuarios div{
@@ -326,6 +326,7 @@ a.u-elim{
 	width:11%;
 	height:100px;
 	float: left;
+	margin:0 0 0 1%;
 }
 	.usuarios > .u-foto .cont-u-foto{
 		width:60px;
@@ -347,16 +348,15 @@ a.u-elim{
 			top:0px;
 		}
 
-
-
-
-.usuarios > .u-nom{
+.usuarios .u-nom{
 	width:18.2%;
 	line-height: 100px;
+	margin:0 0 0 1%;
 }
 .usuarios > .u-tipo{
 	width:9%;
 	line-height: 100px;
+	margin:0 0 0 1%;
 }
 .usuarios > .u-mail{
 	width:19.4%;
@@ -384,6 +384,17 @@ a.u-elim{
 .usuarios > .u-elim:hover{
 	background: url('../img/bg-borrar.png') no-repeat center -20px;
 }
+
+
+
+
+
+
+
+
+
+
+
 .contenido{
 	width:78.125%;
 	height:auto;
@@ -413,9 +424,6 @@ a.u-elim{
 	background: #c0392b;
 }
 
-.usuarios {
-
-}
 
 /* Estilos individuales */
 .contenido-user{
@@ -423,7 +431,7 @@ a.u-elim{
 	margin: 0 auto;
 }
 .contenido-crear{
-	width:620px;
+	width:590px;
 	height:auto;
 	overflow: hidden;
 	margin: 30px auto 0 auto;
@@ -639,7 +647,7 @@ input[type="submit"] {
 }
 textarea{
 	width:250px;
-	height:100px;
+	height: 103px;
 	float: left;
 	font-size: 18px;
 	margin:0 0 20px 0;
@@ -651,13 +659,13 @@ textarea:focus[type="text"]{
 	border: 1px solid #3397DA;
 }
 .el-select {
-	width: 280px;
+	width: 100%;
 	height: 40px;
 	float: left;
 	overflow: hidden;
 	border: 1px solid #CCC;
 	margin: 0px 0px 20px;
-	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	background: url("../img/bg-flecha.png") no-repeat scroll 95% center #F3F3F3;
 	color: rgb(204, 204, 204);
 }
 .el-select select {
@@ -688,7 +696,7 @@ textarea:focus[type="text"]{
 	width:45%;
 	height:auto;
 	float: left;
-	margin: 100px 0px 0px 3%;
+	margin: 102px 0px 0px 3%;
 }
 /* Modulos - - - - - - */
 .arrastrar {
@@ -709,22 +717,22 @@ textarea:focus[type="text"]{
 	padding: 5px;
 }
 .modulo {
-	width:100%;
-	height:auto;
+	width: 97%;
+	height: auto;
 	float: left;
-	border:1px solid #ccc;
-	margin:3px 0;
+	border: 1px solid #CCC;
+	margin: 3px 0px;
 	padding: 3px;
 	cursor: move;
-	background: #fff;
+	background: none repeat scroll 0% 0% #FFF;
 }
 .soltar .modulo {
-	width:48%;
-	height:auto;
+	width: 47.3%;
+	height: auto;
 	float: left;
-	border:1px solid #ccc;
-	margin:3px 5px 3px 0;
-	padding: 3px;
+	border: 1px solid #CCC;
+	margin: 3px 1% 3px 0px;
+	padding: 3px 1% 3px 0;
 	cursor: move;
 	overflow: hidden;
 }
@@ -743,8 +751,6 @@ textarea:focus[type="text"]{
 	font-weight: 300;
 	float: left;
 }
-
-
 
 /* Clases generales - - - - - - - - - - - - - - - */
 .cont-perf {
@@ -858,10 +864,9 @@ input[type="file"] {
 	font-size: 20px;
 	background: none repeat scroll 0% 0% transparent;
 	opacity: 0;
-
 }
 .btn-file {
-	width: 70px;
+	width: 68px;
 	height: 30px;
 	position: relative;
 	line-height: 30px;
@@ -906,85 +911,136 @@ input[type="file"] {
    ========================================================================== */
 
 @media only screen and (max-width: 800px) {
+	aside {
+		width:100%;
+		height:auto;
+		float:left;
+		background: #393939;
+		color:#e5e5e5;
+		margin: 0px;
+	}
+	.contenido{
+		width:100%;
+		height:auto;
+		float: left;
+	}
+	td {
+		font-size: 16px;
+		height:80px;
+	}
+	td p {
+		line-height: 80px;
+		text-indent: 5px;
+	}
+	.usuarios {
+		font-size: 16px;
+		height:80px;
+	}
+	.usuarios > .u-foto{
+		height:80px;
+	}
+	.usuarios > .u-foto .cont-u-foto{
+		width:40px;
+		height:40px;
+		position: relative;
+		float: none;
+		margin: 20px auto 0px;
+	}
+	.usuarios > .u-foto > .cont-u-foto img{
+		width:40px;
+		margin:0px auto;
+		display:block;
+	}
+	.usuarios > .u-foto > .cont-u-foto .fb-foto {
+	    width: 40px;
+	    height: 40px;
+	    background: url("../img/fg-u-foto.png") no-repeat scroll -10px -60px transparent;
+	    position: absolute;
+	    top: 0px;
+	    top: 0px;
+	}
+	.usuarios > .u-nom,
+	.usuarios > .u-tipo,
+	.usuarios > .u-mail,
+	.usuarios > .u-cli,
+	.usuarios > .u-reg,
+	.usuarios > .u-estado,
+	.usuarios > .u-elim {
+		line-height: 80px;
+	}
 
+	.men-ha{
+		width:33.333333333%;
+		float: left;
+	}
+	.cont-perf {
+		width:100%;
+	}
 
-aside {
-	width:100%;
-	height:auto;
-	float:left;
-	background: #393939;
-	color:#e5e5e5;
-	margin: 0px;
-}
-
-.contenido{
-	width:100%;
-	height:auto;
-	float: left;
-}
-
-
-td {
-	font-size: 16px;
-	height:80px;
-}
-td p {
-	line-height: 80px;
-	text-indent: 5px;
-}
-.cont-u-foto{
-	width:40px;
-	height:40px;
-	position: relative;
-	float: none;
-	margin:0 auto;
-}
-.cont-u-foto img{
-	width:40px;
-	margin:0px auto;
-	display:block;
-}
-.fb-foto {
-    width: 40px;
-    height: 40px;
-    background: url("../img/fg-u-foto.png") no-repeat scroll -10px -60px transparent;
-    position: absolute;
-    top: 0px;
-    top: 0px;
-}
-.men-ha{
-	width:33.333333333%;
-	float: left;
-}
-
-.cont-perf {
-	width:100%;
-}
-
-}/* Clases generales max-width 800px - - - - - - - - - - - - - - - */
+}/* Clases generales max-width 650px - - - - - - - - - - - - - - - */
 @media only screen and (max-width: 650px) {
-.izq {
-    width: 100%;
-	margin: 0px;
-}
-.der {
-    width: 100%;
-    height: auto;
-	float: left;
-	margin: 0px;
-}
-.contenido-crear {
-    width:90%;
-    height: auto;
-    overflow: hidden;
-    margin: 30px 5% 0;
-   	padding: 0px;
-   	float: left;
-}
-input[type="text"] {
-	width: 99%
-}
+	.izq {
+	    width: 100%;
+		margin: 0px;
+	}
+	.der {
+	    width: 100%;
+	    height: auto;
+		float: left;
+		margin: 0px;
+	}
+	.contenido-crear {
+	    width:90%;
+	    height: auto;
+	    overflow: hidden;
+	    margin: 30px 5% 0;
+	   	padding: 0px;
+	   	float: left;
+	}
+	input[type="text"] {
+		width: 99%
+	}
+	input[type="password"]{
+		width:99%;
+	}
 
+	.el-select {
+		width: 99%;
+		background: url("../img/bg-flecha.png") no-repeat scroll 97.4% center #F3F3F3;
+	}
+	.el-select select {
+		width: 105%;
+	}
+	.usuarios > .u-estado,
+	.usuarios > .u-elim,
+	.usuarios > .u-reg {
+		display: none;
+	}
+	.usuarios > .u-foto {
+		width: 11%;
+		margin: 0 0 0 4%;
+	}
+	.usuarios > .u-nom {
+		width:50%;
+		line-height: 1;
+		font-size: 20px;
+		margin:20px 0 0 5%;
+	}
+	.usuarios > .u-tipo {
+		width:30%;
+		line-height: 1;
+		font-size: 20px;
+		margin:20px 0 0 0;
+	}
+	.usuarios > .u-mail {
+		width:50%;
+		line-height: 1;
+		margin:0 0 0 5%;
+	}
+	.usuarios > .u-cli {
+		width:30%;
+		line-height: 1;
+	}
 }/*fin 650px - - - - - - */
 
 

@@ -6,6 +6,7 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
+    margin: 0px 0px 20px;
 }
 
 .ms-choice {
@@ -21,7 +22,7 @@
     line-height: 40px;
     color: #777;
     text-decoration: none;
-    background-color: #FFF;
+    background:url("../img/bg-flecha.png") no-repeat scroll 245px center #F3F3F3;
 }
 
 .ms-choice.disabled {
@@ -192,10 +193,14 @@
 
 
 @media only screen and (max-width: 650px) {
-.ms-parent{
-    width:100% !important;
-}
-.ms-choice {
-width:100% !important;
-}
+    .ms-parent{
+        width:100% !important;
+    }
+    .ms-choice {
+        width:99.6% !important;
+        background:url("../img/bg-flecha.png") no-repeat scroll 97.4% center #F3F3F3;
+    }
+    .ms-drop {
+        width:99%;
+    }
 }
